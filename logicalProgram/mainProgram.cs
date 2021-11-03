@@ -6,8 +6,8 @@ namespace logicalProgram
     {
         static void Main(string[] args)
         {
-    lable1:Console.WriteLine("select the program : 1.fibonacci series 2.Perfect number");
-            Console.WriteLine("                     3.prime number     4.reverce number 5.");
+    lable1:Console.WriteLine("select the program : 1.fibonacci series 2.Perfect number 3.prime number");
+           Console.WriteLine("                     3.reverce number   4.               5.");
             int option = int.Parse(Console.ReadLine());
 
             switch(option)
