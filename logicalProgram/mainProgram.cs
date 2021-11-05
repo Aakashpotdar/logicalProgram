@@ -7,7 +7,7 @@ namespace logicalProgram
         static void Main(string[] args)
         {
     lable1:Console.WriteLine("select the program : 1.fibonacci series 2.Perfect number 3.prime number");
-           Console.WriteLine("                     3.reverce number   4.               5.");
+           Console.WriteLine("                     4.reverce number   5.coupon number");
             int option = int.Parse(Console.ReadLine());
 
             switch(option)
@@ -28,6 +28,10 @@ namespace logicalProgram
                 case 4:
                     reversNumber obj4 = new reversNumber();
                     obj4.check();
+                    break;
+                case 5:
+                    couponNumber obj5 = new couponNumber();
+                    obj5.coupons();
                     break;
                 default:
                     Console.WriteLine("enter correct choice");
