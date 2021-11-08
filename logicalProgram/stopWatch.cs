@@ -9,22 +9,32 @@ namespace logicalProgram
     {
         public void logic()
         {
-            Console.WriteLine("enter start to start stop watch");
-            string s = Console.ReadLine();
+            //Console.WriteLine("enter start to start stop watch");
+            //string s = Console.ReadLine();
             Stopwatch watch1 = new Stopwatch();
-            if (s.Equals("start"))
+            watch1.Start();
+            Console.WriteLine("enter no.: ");
+            for(int i = 0; i < 1000; i++)
             {
-                new stopWatch();
-                watch1.Start();
+                System.Threading.Thread.Sleep(50);
+
             }
-            Console.WriteLine("enter start to stop stop watch");
-            string s1 = Console.ReadLine();
+            watch1.Stop();
+            Console.WriteLine("elast time:{0:hh\\:mm\\:ss} "+watch1.ElapsedTicks);
+
+            //if (s.Equals("start"))
+            //{
+              //  new stopWatch();
+                //watch1.Start();
+            //}
+            //Console.WriteLine("enter start to stop stop watch");
+            //string s1 = Console.ReadLine();
             //stopWatch watch2 = null;
-            if (s1.Equals("stop"))
-            {
-                new stopWatch();
-                watch1.Stop();
-            }
+            //if (s1.Equals("stop"))
+            //{
+              //  new stopWatch();
+                //watch1.Stop();
+            //}
         }
     }
 }
