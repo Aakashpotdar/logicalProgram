@@ -16,11 +16,11 @@ namespace logicalProgram
             Console.WriteLine("enter no.: ");
             for(int i = 0; i < 1000; i++)
             {
-                System.Threading.Thread.Sleep(50);
+                Thread.Sleep(50);
 
             }
             watch1.Stop();
-            Console.WriteLine("elast time:{0:hh\\:mm\\:ss} "+watch1.ElapsedTicks);
+            Console.WriteLine("elast time:{0:hh\\:mm\\:ss} "+watch1.Elapsed);
 
             //if (s.Equals("start"))
             //{
