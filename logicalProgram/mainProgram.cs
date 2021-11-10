@@ -31,7 +31,7 @@ namespace logicalProgram
                     break;
                 case 5:
                     couponNumber obj5 = new couponNumber();
-                    obj5.coupons(5);
+                    obj5.coupons();
                     break;
                 case 6:
                     vendingMachine obj6 = new vendingMachine();
